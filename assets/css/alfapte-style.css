@@ -1,0 +1,96 @@
+/*Header Top*/
+
+.alfapte-header-top{
+    background-color: #333;
+    padding: 10px 20px;
+    position: relative;
+}
+.alfapte-header-top::before{
+    content: "";
+    width: 50%;
+    background-color: #fff;
+    border-top: 72px solid #fff; 
+    border-right: 72px solid #333;
+    height: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.alfapte-header-top .navbar-brand{
+    float: left;
+    z-index: 0;
+    position: absolute;
+}
+.alfapte-header-top .navbar-brand img {
+    max-width: 90px;
+}
+.alfapte-header-top-btn-wrapper{
+    text-align: right;
+}
+
+/*Header*/
+.foxapp-header{
+    top: 90px;
+}
+
+/*HERO Section*/
+.slide .content-bottom h2 {
+    text-transform: none;
+}
+
+/*FUN FACTS*/
+.fun-facts .fact-box{
+    background-color: #00cdcd;
+}
+.fun-facts .fact-box .lnr,
+.fun-facts .fact-box h5,
+.fun-facts .fact-box h6{
+    color: #fff !important;
+}
+
+/*FEATURES*/
+.features-circle .circle-svg{
+    top: -60px;
+}
+.features-circle img{
+    max-width: 560px;
+}
+
+/*Tutorial Videos*/
+.screenshots .screenshots-slider .item{
+    opacity: unset;
+}
+
+/*Watch Video*/
+.lity, .watch-video .video:before{
+    border-radius: 20px;
+}
+
+/*FOOTER*/
+footer .footer-widgets .widget img{
+    max-width: 100px;
+}
+footer .footer-widgets .widget p{
+    font-size: 14px;
+    line-height: 1.5;
+}
+@media (max-width: 1366px){
+    .slide .content-bottom { 
+        padding-bottom: 70px;
+    }
+}
+
+@media (min-width: 992px){
+    .slide .content-bottom img {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 768px){
+    .main-features .features-circle{
+        padding: 60px 0;
+    }
+    .features-circle .circle-svg {
+        top: 10px;
+    }
+}

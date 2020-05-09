@@ -80,6 +80,8 @@
                 infinite: false,
                 focusOnSelect: true,
                 arrows: false,
+                infinite: false,
+                dots: true,
                 responsive: [{
                         breakpoint: 1200,
                         settings: {
@@ -104,8 +106,7 @@
                 //centerPadding: '150px',
                 slidesToShow: 3,
                 infinite: false,
-                focusOnSelect: false,
-                arrows: false,
+                focusOnSelect: false, 
                 responsive: [{
                         breakpoint: 1200,
                         settings: {

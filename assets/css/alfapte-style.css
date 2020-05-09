@@ -2,15 +2,15 @@
 
 .alfapte-header-top{
     background-color: #333;
-    padding: 10px 20px;
+    padding: 15px 20px;
     position: relative;
 }
 .alfapte-header-top::before{
     content: "";
-    width: 50%;
+    width: 75%;
     background-color: #fff;
     border-top: 72px solid #fff; 
-    border-right: 72px solid #333;
+    border-right: 50vw solid #333;
     height: 0;
     position: absolute;
     left: 0;
@@ -20,6 +20,7 @@
     float: left;
     z-index: 0;
     position: absolute;
+    top: 6px;
 }
 .alfapte-header-top .navbar-brand img {
     max-width: 90px;
@@ -27,25 +28,43 @@
 .alfapte-header-top-btn-wrapper{
     text-align: right;
 }
-
+.alfapte-header-top-btn-wrapper .btn-primary{
+    padding: 10px 40px;
+}
 /*Header*/
 .foxapp-header{
     top: 90px;
 }
 
 /*HERO Section*/
-.slide .content-bottom h2 {
-    text-transform: none;
+.slide .content-bottom h2 { 
+     
+}
+.slide .content-bottom p { 
+    max-width: 300px;
 }
 
-/*FUN FACTS*/
-.fun-facts .fact-box{
-    background-color: #00cdcd;
+/*DOWNLOAD*/
+.boxes .box{
+    padding: 40px 30px;
 }
-.fun-facts .fact-box .lnr,
+/*FUN FACTS*/
+/* .fun-facts .fact-box{
+    background-color: #00cdcd;
+} */
+.fun-facts .fact-box h5{
+    font-size: 44px;
+}
+/* .fun-facts .fact-box .lnr,
 .fun-facts .fact-box h5,
 .fun-facts .fact-box h6{
     color: #fff !important;
+} */
+
+
+/*ABOUT*/
+.why-us p{
+    text-align: justify;
 }
 
 /*FEATURES*/
@@ -55,7 +74,9 @@
 .features-circle img{
     max-width: 560px;
 }
-
+.main-features .one-feature h5{
+    display: block;
+}
 /*Tutorial Videos*/
 .screenshots .screenshots-slider .item{
     opacity: unset;
@@ -65,7 +86,14 @@
 .lity, .watch-video .video:before{
     border-radius: 20px;
 }
-
+/*VIDEO TUTORIALS*/
+.screenshots .screenshots-slider .slick-slide img{
+    max-width: 320px;
+}
+.screenshots .screenshots-slider .slick-prev:before, 
+.screenshots .screenshots-slider .slick-next:before{
+    color: #333;
+}
 /*FOOTER*/
 footer .footer-widgets .widget img{
     max-width: 100px;
@@ -73,6 +101,136 @@ footer .footer-widgets .widget img{
 footer .footer-widgets .widget p{
     font-size: 14px;
     line-height: 1.5;
+}
+/*MODAL*/
+.alpha-login-modal .modal-dialog{ 
+    max-width: 410px;
+}
+.alpha-login-modal .modal-content{
+    background-color: #00cdcd;
+    border-radius: 20px;
+}
+.alpha-login-modal .modal-header{
+    border-bottom: none;
+    padding-bottom: 0;
+}
+.alpha-login-modal .modal-header .nav-pills .nav-link{
+    color: #fff;
+}
+.alpha-login-modal .modal-header .close {
+    color: #fff;
+}
+.alpha-login-modal .modal-header .nav-pills .nav-link.active,
+.alpha-login-modal .modal-header .nav-pills .show>.nav-link{
+    color: #00cdcd;
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+.alpha-login-modal-logo{
+    text-align: center;
+}
+.alpha-login-modal-logo img{
+    max-width: 64px; 
+    position: absolute;
+    top: 32px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.alpha-login-modal-logo .circle{
+    background-color: #fff;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+} 
+.alpha-login-modal .modal-body{
+    padding: 1rem 2.5rem;
+}
+.alpha-login-modal.git-in-touch .form-group .form-control{
+    border-color: #fff; 
+    background: transparent;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: .75em;
+}
+.alpha-login-modal.git-in-touch .form-group .form-control::placeholder{
+    color: #fff;
+}
+.alpha-login-modal.git-in-touch  .btn-primary{
+    padding: 12px;
+}
+.alpha-login-modal.git-in-touch  .btn-primary:hover{
+    background-color: #F2CE5F;
+}
+.alpha-modal-btn-divider{
+    color: #fff;
+    margin-bottom: 24px;
+}
+.btn-facebook,.btn-google,.btn-telegram{
+    border-radius: 50px;
+    padding: 4px 38px;
+    color: #fff;
+    transition: .4s;
+}
+.btn-facebook{
+    background-color: #3b5998;
+}
+.btn-facebook:hover{
+    background-color: #003094; 
+}
+.btn-google{
+    background-color: #db4a39;
+}
+.btn-google:hover{
+    background-color: #bf1400;
+}
+.btn-telegram{
+    background-color: #0088cc;
+}
+.btn-telegram:hover{
+    background-color: #015986;
+}
+
+/*SLICK Overwrite*/
+.slick-dots {
+    position: absolute;
+    bottom: -25px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+.slick-dots li {
+    width: 20px;
+    height: 15px;
+    transition: all ease 0.3s;
+}
+.slick-dots li button {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: #fff;
+    margin: 0 auto;
+}
+.slick-dots li.slick-active {
+    width: 40px;
+}
+.slick-dots li.slick-active button{
+    background: #00cdcd; 
+    border: 2px solid #fff;
+}
+.slick-dots li button:before,
+.slick-dots li.slick-active button:before{
+    color: transparent;
+}
+.slick-prev{
+    left: 25px;
+    z-index: 2;
+}
+.slick-next{
+    right: 25px;
 }
 @media (max-width: 1366px){
     .slide .content-bottom { 
@@ -92,5 +250,20 @@ footer .footer-widgets .widget p{
     }
     .features-circle .circle-svg {
         top: 10px;
+    }
+    .features-circle img{
+        max-width: 100%;
+    }
+}
+@media (max-width: 767px){
+    .alfapte-header-top{
+        padding: 20px 20px;
+    }
+    .alfapte-header-top-btn-wrapper .btn-primary{
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+    .alpha-login-modal .modal-dialog{
+        max-width: 100%;
     }
 }

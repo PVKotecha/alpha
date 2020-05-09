@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,7 +23,8 @@
     <link href="assets/css/lity.min.css" rel="stylesheet">
 
     <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css"> 
+
 
     <!-- linearicons CSS -->
     <link rel="stylesheet" href="assets/css/linearicons.css">
@@ -152,10 +154,10 @@
             <img src="assets/img/logo.png" class="img-fluid" alt="">
         </a>
         <div class="alfapte-header-top-btn-wrapper">
-            <a href="javascript:void(0)" class="btn btn-primary btn-theme btn-white mr-lg-2 shadow" ><span>
-                Login </span></a>
-            <a href="javascript:void(0)" class="btn btn-primary shadow btn-colord btn-theme" ><span>
-                Join Now </span></a>
+            <a href="javascript:void(0)" class="btn btn-primary btn-theme btn-white mr-lg-2 shadow" data-toggle="modal" data-target="#loginSignupModal"><span>
+                    Login </span></a>
+            <a href="javascript:void(0)" class="btn btn-primary shadow btn-colord btn-theme" data-toggle="modal" data-target="#loginSignupModal"><span>
+                    Join Now </span></a>
         </div>
     </div>
     <!--End Header Top-->
@@ -185,11 +187,11 @@
                         <li class="nav-item">
                             <a class="nav-link anchor" href="#screenshots">Tutorial Videos</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link anchor" href="#prices">Pricing </a>
-                        </li>
-                        <li class="nav-item"  >
-                            <a  class="nav-link anchor" href="#faqAccordion" >FAQs</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link anchor" href="#faq">PTE FAQ</a>
                         </li>
                         <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -221,9 +223,12 @@
                 <div class="row align-items-center">
                     <div class="col-md-6" data-aos="fade-right">
                         <p class="mb-0">Best</p>
-                        <h2>PTE Practice Portal</h2>
-                        <p>with Real Exam Simulation & Artificial Intelligence (AI) Scoring</p>
-                        <a href="#" class="btn btn-primary btn-white shadow btn-theme"><span>Join now for <b>​FREE​</b></span></a>
+                        <h2>PTE PRACTICE</h2>
+                        <p>Portal with real exam simulation
+                            & Artificial Intelligence Scoring
+                        </p>
+                        <a href="#" class="btn btn-primary btn-white shadow btn-theme"><span>Join now for
+                                <b>​FREE​</b></span></a>
                     </div>
                     <div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
                         <img src="assets/img/ipad-landscap.png" class="img-fluid d-block mx-auto" alt="">
@@ -234,20 +239,81 @@
     </section>
     <!-- End HERO section -->
 
+    <!-- Start Boxes -->
+    <section id="boxes" class="boxes padding-100">
+        <div class="container">
+            <div class="row">
+                <div class="text-center col-12 section-title" data-aos="fade-zoom-in">
+                    <h3>Download
+                        <span> PTE Material
+                        </span>
+                    </h3>
+                    <div class="space-50"></div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <a href="javascript:void(0);"  data-toggle="modal" data-target="#loginSignupModal">
+                        <div class="box" data-aos="fade-up">
+                            <div class="icon">
+                                <span class="lnr lnr-download"></span>
+                            </div>
+                            <div class="space-20"></div>
+                            <h4>Speaking Templates</h4>
+                            <div class="space-15"></div>
+                            <p>Download Describe Image<br>
+                                Download Re-Tell Lecture 
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-12">
+                    <a href="javascript:void(0);"  data-toggle="modal" data-target="#loginSignupModal">
+                        <div class="box" data-aos="fade-up" data-aos-delay="200">
+                            <div class="icon">
+                                <span class="lnr lnr-download"></span>
+                            </div>
+                            <div class="space-20"></div>
+                            <h4>Writing Templates</h4>
+                            <div class="space-15"></div>
+                            <p>Download Summarize Spoken Text<br>
+                                Download Essay
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-12">
+                    <a href="javascript:void(0);"  data-toggle="modal" data-target="#loginSignupModal">
+                        <div class="box" data-aos="fade-up" data-aos-delay="400">
+                            <div class="icon">
+                                <span class="lnr lnr-download"></span>
+                            </div>
+                            <div class="space-20"></div>
+                            <h4>PTE Prediction File</h4>
+                            <div class="space-15"></div>
+                            <p>Our Prediction File has the highest 
+                                frequency of repeated questions
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Boxes -->
+
     <!-- Start Fun Facts -->
-    <section id="facts" class="fun-facts padding-100">
+    <section id="facts" class="fun-facts padding-100 background-withcolor">
         <div class="container-fluid">
             <div class="row">
                 <div class="text-center col-12 section-title" data-aos="fade-zoom-in">
-                    <h3>Fun
+                    <!--<h3>Fun
                         <span> Facts</span>
                     </h3>
                     <div class="space-25"></div>
-                    <!-- <p>Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor coli
+                     <p>Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor coli
                         incidit
                         labore
-                        lorem ipsum amet madolor sit amet.</p> -->
-                    <div class="space-50"></div>
+                        lorem ipsum amet madolor sit amet.</p> 
+                    <div class="space-50"></div>-->
                 </div>
             </div>
             <div class="row align-items-center">
@@ -261,7 +327,7 @@
                 <div class="col-lg-2 col-md-6 col-12">
                     <div class="fact-box text-center" data-aos="fade-up" data-aos-delay="800">
                         <span class="lnr lnr-question-circle"></span>
-                        <h5>2000</h5>
+                        <h5>99000</h5>
                         <h6>Total Questions</h6>
                     </div>
                 </div>
@@ -269,7 +335,7 @@
                     <div class="fact-box text-center" data-aos="fade-up" data-aos-delay="1200">
                         <span class="lnr lnr-bookmark"></span>
                         <h5>762</h5>
-                        <h6>Prediction %</h6>
+                        <h6>Prediction Percentage</h6>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6 col-12">
@@ -283,7 +349,7 @@
                     <div class="fact-box text-center" data-aos="fade-up" data-aos-delay="2000">
                         <span class="lnr lnr-checkmark-circle"></span>
                         <h5>360</h5>
-                        <h6>AI accuracy %</h6>
+                        <h6>AI accuracy Percentage</h6>
                     </div>
                 </div>
             </div>
@@ -291,30 +357,28 @@
     </section>
     <!-- End Fun Facts  -->
 
-     <!-- Start Why Us -->
+    <!-- Start Why Us -->
     <section id="about" class="why-us padding-100 background-fullwidth background-fixed "
         style="background-image: url(assets/img/gray-bg.jpg);">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12">
-                    <h3>About
-                        <span> Us</span>
-                    </h3>
-                </div>
+            <div class="row align-items-center"> 
                 <div class="col-md-6 text-center" data-aos="fade-right">
                     <img src="assets/img/ipad-landscap.png" class="img-fluid" alt="">
                 </div>
                 <div class="col-md-6" data-aos="fade-zoom-in" data-aos-delay="200">
                     <h3>The Conception of Excellence</h3>
-                    <p>ALFAPTE.com is a student practice platform for PTE Academic which has been developed by an Australian based training school.
-                        The portal offers FREE practice & comes with a  ‘state of the art’ Artificial Intelligence Scoring with highly accurate results.
+                    <p>ALFAPTE.com is a student practice platform for PTE Academic which has been developed by an
+                        Australian based training school.
+                        The portal offers FREE practice & comes with a ‘state of the art’ Artificial Intelligence
+                        Scoring with highly accurate results.
                     </p>
                     <div class="space-50"></div>
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6 col-12" data-aos="zoom-in" data-aos-delay="400">
                             <div class="why-us-icon">
                                 <span class="lnr lnr-users"></span>
-                                <p> The team behind the concept boasts an experience of over 5 years in the PTE industry.
+                                <p> The team behind the concept boasts an experience of over 5 years in the PTE
+                                    industry.
                                 </p>
                             </div>
                             <div class="space-25"></div>
@@ -322,7 +386,7 @@
                         <div class="col-lg-6 col-md-6 col-sm-6 col-12" data-aos="zoom-in" data-aos-delay="600">
                             <div class="why-us-icon">
                                 <span class="lnr lnr-clock"></span>
-                                <p>100s of hours of trials & testing has resulted in the perfection of this portal. 
+                                <p>100s of hours of trials & testing has resulted in the perfection of this portal.
                                 </p>
                             </div>
                         </div>
@@ -332,7 +396,8 @@
                         <div class="col-lg-6 col-md-6 col-sm-6 col-12" data-aos="zoom-in" data-aos-delay="800">
                             <div class="why-us-icon">
                                 <span class="lnr lnr-calendar-full"></span>
-                                <p>Regular experimentation during weekly exams help in keeping the portal synchronized with the changing PTE patterns.
+                                <p>Regular experimentation during weekly exams help in keeping the portal synchronized
+                                    with the changing PTE patterns.
                                 </p>
                             </div>
                             <div class="space-25"></div>
@@ -346,53 +411,16 @@
                             <div class="space-25"></div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col" data-aos="zoom-in" data-aos-delay="1200">
+                            <a href="http://www.alfaedu.co" class="btn btn-primary btn-secondary shadow btn-colord">Read more</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- End Why Us -->
-
-    <!-- Start Boxes -->
-    <!-- <section id="boxes" class="boxes padding-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-12">
-                    <div class="box" data-aos="fade-up">
-                        <div class="icon">
-                            <span class="lnr lnr lnr-magic-wand"></span>
-                        </div>
-                        <div class="space-20"></div>
-                        <h4>Creative Design</h4>
-                        <div class="space-15"></div>
-                        <p>Proactively syndicate open-source e-markets after low-risk high-yield synergy.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12">
-                    <div class="box" data-aos="fade-up" data-aos-delay="200">
-                        <div class="icon">
-                            <span class="lnr lnr-rocket"></span>
-                        </div>
-                        <div class="space-20"></div>
-                        <h4>Free support</h4>
-                        <div class="space-15"></div>
-                        <p>Proactively syndicate open-source e-markets after low-risk high-yield synergy.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12">
-                    <div class="box" data-aos="fade-up" data-aos-delay="400">
-                        <div class="icon">
-                            <span class="lnr lnr-diamond"></span>
-                        </div>
-                        <div class="space-20"></div>
-                        <h4>Exclusive Design</h4>
-                        <div class="space-15"></div>
-                        <p>Proactively syndicate open-source e-markets after low-risk high-yield synergy.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- End Boxes --> 
 
     <!-- Start Main Features -->
     <section id="main_features" class="main-features padding-100">
@@ -403,25 +431,25 @@
                         <span>Features</span>
                     </h3>
                     <div class="space-25"></div>
-                    <p>ALFAPTE.com offers a variety of features that’ll help any aspirant in preparing, practicing & achieving their desired score.</p>
+                    <p>ALFAPTE.com offers a variety of features that will help PTE aspirants in preparing, practicing & achieving their desired scores</p>
                     <div class="space-25"></div>
                 </div>
             </div>
             <div class="row align-items-center">
-                <div class="col-lg-3 text-lg-right left-side">
+                <div class="col-lg-3 text-center left-side">
                     <div class="one-feature one" data-aos="fade-right" data-aos-delay="1000">
+                        <div class="lnr lnr-rocket"></div>
                         <h5>Latest &amp; Updated Material</h5>
-                        <span class="lnr lnr-rocket"></span>
-                        <p>Material on the portal is regularly updated with real exam questions. </p>
+                        <p>Material on the portal is regularly updated with real exam questions</p>
                     </div>
                     <div class="one-feature" data-aos="fade-right" data-aos-delay="1400">
+                        <div class="lnr lnr-cog"></div>
                         <h5>Artificial Intelligence</h5>
-                        <span class="lnr lnr-cog"></span>
-                        <p>The portal’s AI offers a 95% accuracy & similarly to PTE algorithms. </p>
+                        <p>The portal’s AI offers a 95% accuracy & similarly to PTE algorithms</p>
                     </div>
                     <div class="one-feature" data-aos="fade-right" data-aos-delay="1800">
+                        <div class="lnr lnr-cloud"></div>
                         <h5>Prediction</h5>
-                        <span class="lnr lnr-cloud"></span>
                         <p>Practise with the highest frequency of prediction questions with AI </p>
                     </div>
                 </div>
@@ -443,21 +471,21 @@
                         <img src="assets/img/ipad-landscap.png" class="img-fluid" alt="">
                     </div>
                 </div>
-                <div class="col-lg-3 right-side">
-                    <div class="one-feature" data-aos="fade-left" data-aos-delay="1000">
+                <div class="col-lg-3 right-side text-center">
+                    <div class="one-feature" data-aos="fade-left" data-aos-delay="1000"> 
+                        <div class="lnr lnr-construction"></div>
                         <h5>Scored Mock Tests</h5>
-                        <span class="lnr lnr-construction"></span>
-                        <p>Mock Test’s offer real exam simulation & scoring.</p>
+                        <p>Mock Test’s offer real exam simulation & scoring</p>
                     </div>
                     <div class="one-feature" data-aos="fade-left" data-aos-delay="1400">
-                        <h5> Detailed Score Analysis</h5>
-                        <span class="lnr lnr-gift"></span>
-                        <p>Portal gives an accurate picture of a student’s performance. </p>
+                        <div class="lnr lnr-gift"></div>
+                        <h5> Detailed Score Analysis</h5> 
+                        <p>Portal gives an accurate picture of a student’s performance</p>
                     </div>
                     <div class="one-feature" data-aos="fade-left" data-aos-delay="1800">
+                        <div class="lnr lnr-database"></div>
                         <h5> Detailed Webinars</h5>
-                        <span class="lnr lnr-database"></span>
-                        <p>The daily webinars provide strategies in-depth & are available at one’s own convenience. </p>
+                        <p>The daily webinars provide strategies in-depth & are available at one’s own convenience</p>
                     </div>
                 </div>
             </div>
@@ -472,14 +500,13 @@
                 <div class="text-center col-12 section-title" data-aos="fade-zoom-in">
                     <h3>Other
                         <span class="white"> Awesome </span> Features
-                    </h3> 
+                    </h3>
                     <div class="space-50"></div>
                 </div>
             </div>
             <div class="row align-items-center">
                 <div class="col-12">
-                    <div class="other-features-slider" data-aos="fade-up">
-
+                    <div class="other-features-slider" data-aos="fade-up"> 
                         <div class="item text-center">
                             <span class="lnr lnr-rocket"></span>
                             <h4>AI Results</h4>
@@ -489,19 +516,20 @@
                         <div class="item text-center">
                             <span class="lnr lnr-cog"></span>
                             <h4>Test Score Analysis</h4>
-                            <p> The smart portal will assess a student’s PTE score & return with suggestions for improvement. 
+                            <p> The smart portal will assess a student’s PTE score & return with suggestions for
+                                improvement.
                             </p>
                         </div>
                         <div class="item text-center">
                             <span class="lnr lnr-cloud"></span>
                             <h4>Dictation</h4>
-                            <p>  A ‘one of its kind’ tool will help a student in improving their WFDs & LFIBs. 
+                            <p> A ‘one of its kind’ tool will help a student in improving their WFDs & LFIBs.
                             </p>
                         </div>
                         <div class="item text-center">
                             <span class="lnr lnr-construction"></span>
                             <h4>Speech Test</h4>
-                            <p> This tool will help a student in improving pronunciation for the Speaking module. 
+                            <p> This tool will help a student in improving pronunciation for the Speaking module.
                             </p>
                         </div>
                         <div class="item text-center">
@@ -513,13 +541,13 @@
                         <div class="item text-center">
                             <span class="lnr lnr-database"></span>
                             <h4>Templates</h4>
-                            <p>Tried & tested structures for making exams smoother for students. 
+                            <p>Tried & tested structures for making exams smoother for students.
                             </p>
                         </div>
                         <div class="item text-center">
                             <span class="lnr lnr-gift"></span>
                             <h4>Marking</h4>
-                            <p> Helps students’ understand the break-up & marking of the exam as per PTE. 
+                            <p> Helps students’ understand the break-up & marking of the exam as per PTE.
                             </p>
                         </div>
                         <div class="item text-center">
@@ -531,33 +559,36 @@
                         <div class="item text-center">
                             <span class="lnr lnr-gift"></span>
                             <h4>Vocabulary Bank</h4>
-                            <p> A student will be able to add difficult words from anywhere in the portal to learn. 
+                            <p> A student will be able to add difficult words from anywhere in the portal to learn.
                             </p>
                         </div>
                         <div class="item text-center">
                             <span class="lnr lnr-gift"></span>
                             <h4>Pronunciation Mode</h4>
-                            <p> An important feature for a student who’s been struggling in pronouncing difficult words.  
+                            <p> An important feature for a student who’s been struggling in pronouncing difficult words.
                             </p>
                         </div>
                         <div class="item text-center">
                             <span class="lnr lnr-gift"></span>
                             <h4>Filter Screen</h4>
-                            <p> Allows a student to choose & practice from Latest, Prediction, High-Frequency & Bookmark questions.
+                            <p> Allows a student to choose & practice from Latest, Prediction, High-Frequency & Bookmark
+                                questions.
                             </p>
                         </div>
                         <div class="item text-center">
                             <span class="lnr lnr-gift"></span>
                             <h4>Community Interaction</h4>
-                            <p> An in-built interactive community will help student’s learn & assess each other’s performance. 
+                            <p> An in-built interactive community will help student’s learn & assess each other’s
+                                performance.
                             </p>
                         </div>
                         <div class="item text-center">
                             <span class="lnr lnr-gift"></span>
                             <h4>Grammar Rules</h4>
-                            <p> These will help students in brushing up their grammar knowledge to make the Reading module easier. 
+                            <p> These will help students in brushing up their grammar knowledge to make the Reading
+                                module easier.
                             </p>
-                        </div> 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -570,8 +601,8 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="text-center col-12 section-title" data-aos="fade-zoom-in">
-                    <h3>Watch
-                        <span> Video</span>
+                    <h3>A glance of 
+                        <span> ALFAPTE.com</span>
                     </h3>
                     <div class="space-25"></div>
                     <!-- <p>Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor coli
@@ -601,7 +632,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="text-center col-12 section-title" data-aos="fade-zoom-in">
-                    <h3>Tutorial 
+                    <h3>Tutorial
                         <span> Videos</span>
                     </h3>
                     <div class="space-25"></div>
@@ -614,7 +645,7 @@
             </div>
             <div class="row align-items-center">
                 <div class="col-12">
-                    <div class="screenshots-slider" data-aos="fade-up">  
+                    <div class="screenshots-slider" data-aos="fade-up">
                         <div class="item text-center">
                             <img src="assets/img/imac.png" class="img-fluid d-block mx-auto" alt="">
                         </div>
@@ -782,10 +813,10 @@
             </div>
         </div>
     </section> -->
-    <!-- End Clients Testimonial  --> 
+    <!-- End Clients Testimonial  -->
 
     <!-- Start App Price -->
-    <!-- <section id="prices" class="prices padding-100">
+   <!-- <section id="prices" class="prices padding-100">
         <div class="container">
             <div class="row">
                 <div class="text-center col-12 section-title" data-aos="fade-zoom-in">
@@ -868,11 +899,11 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>  -->
     <!-- End App Price  -->
 
     <!-- Start Our Team -->
-    <!-- <section id="team" class="our-team padding-100 background-fullwidth background-fixed"
+    <!-- <section id="team" class="our-team padding-100 background-fullwidth background-fixed" 
         style="background-image: url(assets/img/gray-bg.jpg);">
         <div class="container">
             <div class="row">
@@ -1095,7 +1126,7 @@
         <div class="container">
             <div class="row">
                 <div class="text-center col-12 section-title" data-aos="fade-zoom-in">
-                    <h3>
+                    <h3>PTE 
                         <span> FAQ</span>
                     </h3>
                     <div class="space-25"></div>
@@ -1124,10 +1155,13 @@
                             <div id="collapse_1" class="collapse" aria-labelledby="heading_1"
                                 data-parent="#faqAccordion">
                                 <div class="card-body">
-                                    <p>Pearson Test of English Academic (PTE Academic) is an international computer-based 
-                                        English language test. It provides a measure of a test taker’s language ability to 
-                                        assist education institutions and professional and government organizations that require 
-                                        a standard of academic English language proficiency for admission purposes. 
+                                    <p>Pearson Test of English Academic (PTE Academic) is an international
+                                        computer-based
+                                        English language test. It provides a measure of a test taker’s language ability
+                                        to
+                                        assist education institutions and professional and government organizations that
+                                        require
+                                        a standard of academic English language proficiency for admission purposes.
                                     </p>
                                     <button class="btn btn-outline-warning">Read More</button>
                                 </div>
@@ -1146,10 +1180,13 @@
                                 data-parent="#faqAccordion">
                                 <div class="card-body">
                                     <p>
-                                        PTE Academic is accepted for student and migration applications across the world. In addition to its unbiased approach to testing, the test has many unique advantages.
+                                        PTE Academic is accepted for student and migration applications across the
+                                        world. In addition to its unbiased approach to testing, the test has many unique
+                                        advantages.
                                     </p>
                                     <p>
-                                        Did you know that artificial intelligence means that all test taker’s results are graded by an algorithm, not humans?
+                                        Did you know that artificial intelligence means that all test taker’s results
+                                        are graded by an algorithm, not humans?
                                     </p>
                                     <button class="btn btn-outline-warning">Read More</button>
                                 </div>
@@ -1168,17 +1205,19 @@
                                 data-parent="#faqAccordion">
                                 <div class="card-body">
                                     <h6>Booking & registration:</h6>
-                                   <ul>
-                                        <li>PTE Academic - Register and pay online up to 24 hours in advance.*</li>  
-                                        <li>IELTS - Online or in person. Many centers close registration sometime before the test.</li>
-                                        <li>TOEFL iBT - Registration online, by mail or by phone up to 4 days prior to test date</li> 
-                                   </ul>
+                                    <ul>
+                                        <li>PTE Academic - Register and pay online up to 24 hours in advance.*</li>
+                                        <li>IELTS - Online or in person. Many centers close registration sometime before
+                                            the test.</li>
+                                        <li>TOEFL iBT - Registration online, by mail or by phone up to 4 days prior to
+                                            test date</li>
+                                    </ul>
                                     <button class="btn btn-outline-warning">Read More</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
                 <div class="col-md-6 col-12 mb-5" data-aos="fade-right">
                     <h3 class="mb-4">PTE Speaking Guide</h3>
                     <div class="accordion" id="faqAccordion1">
@@ -1195,10 +1234,13 @@
                             <div id="collapse_1_1" class="collapse" aria-labelledby="heading_1_1"
                                 data-parent="#faqAccordion1">
                                 <div class="card-body">
-                                    <p>Pearson Test of English Academic (PTE Academic) is an international computer-based 
-                                        English language test. It provides a measure of a test taker’s language ability to 
-                                        assist education institutions and professional and government organizations that require 
-                                        a standard of academic English language proficiency for admission purposes. 
+                                    <p>Pearson Test of English Academic (PTE Academic) is an international
+                                        computer-based
+                                        English language test. It provides a measure of a test taker’s language ability
+                                        to
+                                        assist education institutions and professional and government organizations that
+                                        require
+                                        a standard of academic English language proficiency for admission purposes.
                                     </p>
                                     <button class="btn btn-outline-warning">Read More</button>
                                 </div>
@@ -1217,10 +1259,13 @@
                                 data-parent="#faqAccordion1">
                                 <div class="card-body">
                                     <p>
-                                        PTE Academic is accepted for student and migration applications across the world. In addition to its unbiased approach to testing, the test has many unique advantages.
+                                        PTE Academic is accepted for student and migration applications across the
+                                        world. In addition to its unbiased approach to testing, the test has many unique
+                                        advantages.
                                     </p>
                                     <p>
-                                        Did you know that artificial intelligence means that all test taker’s results are graded by an algorithm, not humans?
+                                        Did you know that artificial intelligence means that all test taker’s results
+                                        are graded by an algorithm, not humans?
                                     </p>
                                     <button class="btn btn-outline-warning">Read More</button>
                                 </div>
@@ -1239,17 +1284,19 @@
                                 data-parent="#faqAccordion1">
                                 <div class="card-body">
                                     <h6>Booking & registration:</h6>
-                                   <ul>
-                                        <li>PTE Academic - Register and pay online up to 24 hours in advance.*</li>  
-                                        <li>IELTS - Online or in person. Many centers close registration sometime before the test.</li>
-                                        <li>TOEFL iBT - Registration online, by mail or by phone up to 4 days prior to test date</li> 
-                                   </ul>
+                                    <ul>
+                                        <li>PTE Academic - Register and pay online up to 24 hours in advance.*</li>
+                                        <li>IELTS - Online or in person. Many centers close registration sometime before
+                                            the test.</li>
+                                        <li>TOEFL iBT - Registration online, by mail or by phone up to 4 days prior to
+                                            test date</li>
+                                    </ul>
                                     <button class="btn btn-outline-warning">Read More</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
                 <div class="col-md-6 col-12" data-aos="fade-right">
                     <h3 class="mb-4">PTE Writing Guide</h3>
                     <div class="accordion" id="faqAccordion2">
@@ -1266,10 +1313,13 @@
                             <div id="collapse_1_2" class="collapse" aria-labelledby="heading_1_2"
                                 data-parent="#faqAccordion2">
                                 <div class="card-body">
-                                    <p>Pearson Test of English Academic (PTE Academic) is an international computer-based 
-                                        English language test. It provides a measure of a test taker’s language ability to 
-                                        assist education institutions and professional and government organizations that require 
-                                        a standard of academic English language proficiency for admission purposes. 
+                                    <p>Pearson Test of English Academic (PTE Academic) is an international
+                                        computer-based
+                                        English language test. It provides a measure of a test taker’s language ability
+                                        to
+                                        assist education institutions and professional and government organizations that
+                                        require
+                                        a standard of academic English language proficiency for admission purposes.
                                     </p>
                                     <button class="btn btn-outline-warning">Read More</button>
                                 </div>
@@ -1288,10 +1338,13 @@
                                 data-parent="#faqAccordion2">
                                 <div class="card-body">
                                     <p>
-                                        PTE Academic is accepted for student and migration applications across the world. In addition to its unbiased approach to testing, the test has many unique advantages.
+                                        PTE Academic is accepted for student and migration applications across the
+                                        world. In addition to its unbiased approach to testing, the test has many unique
+                                        advantages.
                                     </p>
                                     <p>
-                                        Did you know that artificial intelligence means that all test taker’s results are graded by an algorithm, not humans?
+                                        Did you know that artificial intelligence means that all test taker’s results
+                                        are graded by an algorithm, not humans?
                                     </p>
                                     <button class="btn btn-outline-warning">Read More</button>
                                 </div>
@@ -1310,17 +1363,19 @@
                                 data-parent="#faqAccordion2">
                                 <div class="card-body">
                                     <h6>Booking & registration:</h6>
-                                   <ul>
-                                        <li>PTE Academic - Register and pay online up to 24 hours in advance.*</li>  
-                                        <li>IELTS - Online or in person. Many centers close registration sometime before the test.</li>
-                                        <li>TOEFL iBT - Registration online, by mail or by phone up to 4 days prior to test date</li> 
-                                   </ul>
+                                    <ul>
+                                        <li>PTE Academic - Register and pay online up to 24 hours in advance.*</li>
+                                        <li>IELTS - Online or in person. Many centers close registration sometime before
+                                            the test.</li>
+                                        <li>TOEFL iBT - Registration online, by mail or by phone up to 4 days prior to
+                                            test date</li>
+                                    </ul>
                                     <button class="btn btn-outline-warning">Read More</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
                 <div class="col-md-6 col-12" data-aos="fade-right">
                     <h3 class="mb-4">PTE Reading Guide</h3>
                     <div class="accordion" id="faqAccordion3">
@@ -1332,14 +1387,17 @@
                                         What is PTE Academic?
                                     </button>
                                 </h5>
-                            </div> 
+                            </div>
                             <div id="collapse_1_3" class="collapse" aria-labelledby="heading_1_3"
                                 data-parent="#faqAccordion3">
                                 <div class="card-body">
-                                    <p>Pearson Test of English Academic (PTE Academic) is an international computer-based 
-                                        English language test. It provides a measure of a test taker’s language ability to 
-                                        assist education institutions and professional and government organizations that require 
-                                        a standard of academic English language proficiency for admission purposes. 
+                                    <p>Pearson Test of English Academic (PTE Academic) is an international
+                                        computer-based
+                                        English language test. It provides a measure of a test taker’s language ability
+                                        to
+                                        assist education institutions and professional and government organizations that
+                                        require
+                                        a standard of academic English language proficiency for admission purposes.
                                     </p>
                                     <button class="btn btn-outline-warning">Read More</button>
                                 </div>
@@ -1358,10 +1416,13 @@
                                 data-parent="#faqAccordion3">
                                 <div class="card-body">
                                     <p>
-                                        PTE Academic is accepted for student and migration applications across the world. In addition to its unbiased approach to testing, the test has many unique advantages.
+                                        PTE Academic is accepted for student and migration applications across the
+                                        world. In addition to its unbiased approach to testing, the test has many unique
+                                        advantages.
                                     </p>
                                     <p>
-                                        Did you know that artificial intelligence means that all test taker’s results are graded by an algorithm, not humans?
+                                        Did you know that artificial intelligence means that all test taker’s results
+                                        are graded by an algorithm, not humans?
                                     </p>
                                     <button class="btn btn-outline-warning">Read More</button>
                                 </div>
@@ -1380,17 +1441,19 @@
                                 data-parent="#faqAccordion3">
                                 <div class="card-body">
                                     <h6>Booking & registration:</h6>
-                                   <ul>
-                                        <li>PTE Academic - Register and pay online up to 24 hours in advance.*</li>  
-                                        <li>IELTS - Online or in person. Many centers close registration sometime before the test.</li>
-                                        <li>TOEFL iBT - Registration online, by mail or by phone up to 4 days prior to test date</li> 
-                                   </ul>
+                                    <ul>
+                                        <li>PTE Academic - Register and pay online up to 24 hours in advance.*</li>
+                                        <li>IELTS - Online or in person. Many centers close registration sometime before
+                                            the test.</li>
+                                        <li>TOEFL iBT - Registration online, by mail or by phone up to 4 days prior to
+                                            test date</li>
+                                    </ul>
                                     <button class="btn btn-outline-warning">Read More</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
             </div>
         </div>
     </section>
@@ -1577,7 +1640,7 @@
     <!-- End Download App -->
 
     <!-- Start  Git in touch -->
-    <!-- <section id="git_in_touch" class="git-in-touch padding-100">
+    <section id="git_in_touch" class="git-in-touch padding-100">
         <div class="container">
             <div class="row">
                 <div class="text-center col-12 section-title" data-aos="fade-zoom-in">
@@ -1585,10 +1648,10 @@
                         <span> in </span>touch
                     </h3>
                     <div class="space-25"></div>
-                    <p>Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor coli
+                    <!-- <p>Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor coli
                         incidit
                         labore
-                        lorem ipsum amet madolor sit amet.</p>
+                        lorem ipsum amet madolor sit amet.</p> -->
                     <div class="space-50"></div>
                 </div>
             </div>
@@ -1649,7 +1712,7 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
     <!-- End  Git in touch  -->
 
     <!-- Start  Map -->
@@ -1684,9 +1747,11 @@
                     <div class="col-lg-3 col-md-6 col-12">
                         <div class="widget">
                             <img src="assets/img/logo.png" class="img-fluid" alt="">
-                            <p>ALFAPTE.com is a student practice platform for PTE Academic which has been developed by an Australian based training school. 
-                                The portal offers FREE practice & comes with a ‘state of the art’ Artificial Intelligence Scoring with highly accurate results.
-                            </p>
+                            <!-- <p>ALFAPTE.com is a student practice platform for PTE Academic which has been developed by
+                                an Australian based training school.
+                                The portal offers FREE practice & comes with a ‘state of the art’ Artificial
+                                Intelligence Scoring with highly accurate results.
+                            </p> -->
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-12">
@@ -1700,7 +1765,7 @@
                                     <a href="#">About Us</a>
                                 </li>
                                 <li>
-                                    <a href="#">Services</a>
+                                    <a href="https://alfaedu.co/">Services</a>
                                 </li>
                                 <li>
                                     <a href="#">Products</a>
@@ -1751,7 +1816,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-4">
-                        <p>All rights reserved © <a href="#">MK</a>, 2020</p>
+                        <p>All rights reserved © <a href="https://alfaedu.co/">Alfa Pty Ltd</a>, 2020</p>
                     </div>
                     <div class="offset-md-4 col-md-4">
                         <ul class="nav justify-content-end">
@@ -1768,6 +1833,126 @@
         </div>
     </footer>
     <!-- End  Footer  -->
+    
+    <!-- Modal -->
+    <div class="modal git-in-touch alpha-login-modal fade" id="loginSignupModal" tabindex="-1" role="dialog" aria-labelledby="loginSignupModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" id="pills-login-tab" data-toggle="pill" href="#pills-login" role="tab" aria-controls="pills-login" aria-selected="true">Login</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="pills-signup-tab" data-toggle="pill" href="#pills-signup" role="tab" aria-controls="pills-signup" aria-selected="false">Signup</a>
+                        </li> 
+                      </ul>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col">
+                            <div class="alpha-login-modal-logo">
+                                <div class="circle"></div>
+                                <img src="assets/img/logo.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="pills-tabContent">
+                      <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="pills-login-tab">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Enter Your Email">
+                                    <span class="focus-border"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Enter Your Password">
+                                    <span class="focus-border"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-white btn-block">LOGIN</button>
+                        <div class="row my-3 text-center">
+                            <div class="col-12 mb-4">
+                                <small class="alpha-modal-btn-divider">or connect with</small>
+                            </div>
+                            <div class="col-4">
+                                <button type="button" class="btn btn-facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </button>
+                            </div>
+                            <div class="col-4">
+                                <button type="button" class="btn btn-google">
+                                    <i class="fab fa-google"></i>
+                                </button>
+                            </div>
+                            <div class="col-4">
+                                <button type="button" class="btn btn-telegram">
+                                    <i class="fab fa-telegram-plane"></i>
+                                </button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="pills-signup" role="tabpanel" aria-labelledby="pills-signup-tab">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Enter Your Name">
+                                    <span class="focus-border"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Enter Your Email">
+                                    <span class="focus-border"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Enter Your Password">
+                                    <span class="focus-border"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Enter Your City">
+                                    <span class="focus-border"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-white btn-block">LOGIN</button>
+                        <div class="row my-3 text-center">
+                            <div class="col-12 mb-4">
+                                <small class="alpha-modal-btn-divider">or connect with</small>
+                            </div>
+                            <div class="col-4">
+                                <button type="button" class="btn btn-facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </button>
+                            </div>
+                            <div class="col-4">
+                                <button type="button" class="btn btn-google">
+                                    <i class="fab fa-google"></i>
+                                </button>
+                            </div>
+                            <div class="col-4">
+                                <button type="button" class="btn btn-telegram">
+                                    <i class="fab fa-telegram-plane"></i>
+                                </button>
+                            </div>
+                        </div>
+                      </div> 
+                    </div> 
+                </div> 
+            </div>
+        </div>
+    </div>
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="assets/js/jquery-3.3.1.min.js"></script>
@@ -1795,5 +1980,6 @@
     <!-- Our Main JS -->
     <script src="assets/js/main.js"></script>
 
-</body> 
+</body>
+
 </html>

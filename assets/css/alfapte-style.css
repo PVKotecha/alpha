@@ -14,11 +14,11 @@ button:focus{
 /*Header Top*/
 
 .alfa-header-top{
-    background-color: #333;
+    background-color: #111;
     padding: 15px 20px;
     position: relative;
 }
-.alfa-header-top::before{
+/* .alfa-header-top::before{
     content: "";
     width: 75%;
     background-color: #fff;
@@ -28,21 +28,24 @@ button:focus{
     position: absolute;
     left: 0;
     top: 0;
-}
+} */
 .alfa-header-top .navbar-brand{
     float: left;
     z-index: 0;
     position: absolute;
-    top: 6px;
+    top: 2px;
 }
 .alfa-header-top .navbar-brand img {
-    max-width: 90px;
+    max-width: 108px;
 }
 .alfa-header-top-btn-wrapper{
     text-align: right;
 }
 .alfa-header-top-btn-wrapper .btn-primary{
     padding: 10px 40px;
+}
+.alfa-btn-join-now{
+    padding: 9px 40px !important;
 }
 /*Header*/
 .foxapp-header{
@@ -63,6 +66,7 @@ button:focus{
 .slide .content-bottom p { 
     max-width: 300px;
     padding-left: 5px;
+    font-size: 17px;
 }
 
 /*DOWNLOAD*/
@@ -94,6 +98,10 @@ button:focus{
     max-width: 470px;
     float: left;
 }
+.alfa-readmore-btn {
+    font-size: 15px;
+}
+
 /*FEATURES*/
 /* .features-circle .circle-svg{
     top: -80px;
@@ -143,6 +151,11 @@ button:focus{
 /*FAQ*/
 .faq .faq-category-title{
     padding-left: 10px;
+}
+.faq .accordion .card .card-body button{
+    float: right;
+    margin-bottom: 30px;
+    font-size: 15px;
 }
 /*FOOTER*/ 
 footer .footer-widgets .widget img{
@@ -327,8 +340,12 @@ footer .footer-widgets .widget p{
     .alfa-header-top{
         padding: 20px 20px;
     }
-    .alfa-header-top-btn-wrapper .btn-primary{
-        padding: 4px 8px;
+    .alfa-header-top .navbar-brand img{
+        max-width: 100px;
+    }
+    .alfa-header-top-btn-wrapper .btn-primary,
+    .alfa-header-top-btn-wrapper .btn-primary.alfa-btn-join-now{
+        padding: 4px 8px !important;
         font-size: 12px;
     }
     .alpha-login-modal .modal-dialog{

@@ -1,11 +1,15 @@
+/*Common*/
+.section-title h3{
+    font-size: 48px;
+}
 /*Header Top*/
 
-.alfapte-header-top{
+.alfa-header-top{
     background-color: #333;
     padding: 15px 20px;
     position: relative;
 }
-.alfapte-header-top::before{
+.alfa-header-top::before{
     content: "";
     width: 75%;
     background-color: #fff;
@@ -16,19 +20,19 @@
     left: 0;
     top: 0;
 }
-.alfapte-header-top .navbar-brand{
+.alfa-header-top .navbar-brand{
     float: left;
     z-index: 0;
     position: absolute;
     top: 6px;
 }
-.alfapte-header-top .navbar-brand img {
+.alfa-header-top .navbar-brand img {
     max-width: 90px;
 }
-.alfapte-header-top-btn-wrapper{
+.alfa-header-top-btn-wrapper{
     text-align: right;
 }
-.alfapte-header-top-btn-wrapper .btn-primary{
+.alfa-header-top-btn-wrapper .btn-primary{
     padding: 10px 40px;
 }
 /*Header*/
@@ -37,21 +41,28 @@
 }
 
 /*HERO Section*/
+.slide .content-bottom {
+    padding: 200px 0;
+}
 .slide .content-bottom h2 { 
-     
+    font-size: 72px;
 }
 .slide .content-bottom p { 
     max-width: 300px;
+    padding-left: 5px;
 }
 
 /*DOWNLOAD*/
 .boxes .box{
     padding: 40px 30px;
 }
+.boxes .box p {
+    font-size: 15px;
+}
 /*FUN FACTS*/
-/* .fun-facts .fact-box{
-    background-color: #00cdcd;
-} */
+.fun-facts .fact-box{ 
+    min-height: 272px;
+}
 .fun-facts .fact-box h5{
     font-size: 44px;
 }
@@ -66,16 +77,29 @@
 .why-us p{
     text-align: justify;
 }
-
+.alfa-about-img{
+    max-width: 470px;
+    float: left;
+}
 /*FEATURES*/
 .features-circle .circle-svg{
-    top: -60px;
+    top: -80px;
 }
 .features-circle img{
-    max-width: 560px;
+    max-width: 510px;
+}
+.main-features .one-feature p {
+    font-size: 15px;
 }
 .main-features .one-feature h5{
     display: block;
+}
+.alfa-readmore-btn:hover{
+    background-color: #F2CE5F;
+}
+/*OTHER FEATURE*/
+.other-features .other-features-slider .item{
+    min-height: 245px;
 }
 /*Tutorial Videos*/
 .screenshots .screenshots-slider .item{
@@ -94,9 +118,10 @@
 .screenshots .screenshots-slider .slick-next:before{
     color: #333;
 }
-/*FOOTER*/
+/*FOOTER*/ 
 footer .footer-widgets .widget img{
-    max-width: 100px;
+    max-width: 150px;
+    margin-top: 4rem;
 }
 footer .footer-widgets .widget p{
     font-size: 14px;
@@ -194,7 +219,7 @@ footer .footer-widgets .widget p{
 /*SLICK Overwrite*/
 .slick-dots {
     position: absolute;
-    bottom: -25px;
+    bottom: -45px;
     display: block;
     width: 100%;
     padding: 0;
@@ -238,6 +263,20 @@ footer .footer-widgets .widget p{
     }
 }
 
+@media (max-width: 1024px){ 
+    .alfa-about-img{
+        max-width: 90%;
+    }
+    .features-circle img{
+        max-width: 100%;
+    }
+    .circle-svg svg{
+        max-width: 460px;
+    }
+    .features-circle .circle-svg{
+        top: -90px;
+    }
+}
 @media (min-width: 992px){
     .slide .content-bottom img {
         max-width: 500px;
@@ -254,16 +293,36 @@ footer .footer-widgets .widget p{
     .features-circle img{
         max-width: 100%;
     }
+    .alfa-about-img{
+        max-width: 100%;
+    }
 }
 @media (max-width: 767px){
-    .alfapte-header-top{
+    .alfa-header-top{
         padding: 20px 20px;
     }
-    .alfapte-header-top-btn-wrapper .btn-primary{
+    .alfa-header-top-btn-wrapper .btn-primary{
         padding: 4px 8px;
         font-size: 12px;
     }
     .alpha-login-modal .modal-dialog{
         max-width: 100%;
+    }
+    .why-us h3{
+        margin-top: 20px;
+    }
+}
+@media (max-width: 375px){
+    .features-circle svg {
+        height: 320px;
+    }
+    .circle-svg svg{
+        max-width: 100%;
+    }
+    .slick-dots li {
+        width: 15px;
+    }
+    .screenshots .screenshots-slider .slick-slide img{
+        max-width: 90%;
     }
 }

@@ -2,6 +2,15 @@
 .section-title h3{
     font-size: 48px;
 }
+.btn-primary.focus, .btn-primary:focus{
+    box-shadow: none;
+}
+button:focus{
+    outline: none;
+}
+.watch-video .video:before{
+    background: none !important; 
+}
 /*Header Top*/
 
 .alfa-header-top{
@@ -41,6 +50,10 @@
 }
 
 /*HERO Section*/
+.alfa-hero.watch-video .video,
+.why-us.watch-video .video{
+     
+}
 .slide .content-bottom {
     padding: 200px 0;
 }
@@ -82,9 +95,9 @@
     float: left;
 }
 /*FEATURES*/
-.features-circle .circle-svg{
+/* .features-circle .circle-svg{
     top: -80px;
-}
+} */
 .features-circle img{
     max-width: 510px;
 }
@@ -98,6 +111,9 @@
     background-color: #F2CE5F;
 }
 /*OTHER FEATURE*/
+.other-features{
+    padding: 60px 0 100px;
+}
 .other-features .other-features-slider .item{
     min-height: 245px;
 }
@@ -110,6 +126,12 @@
 .lity, .watch-video .video:before{
     border-radius: 20px;
 }
+/* .watch-video .video{
+    background-image: url(../img/people.jpg);
+    max-width: 900px;
+    margin: 0 auto;
+} */
+
 /*VIDEO TUTORIALS*/
 .screenshots .screenshots-slider .slick-slide img{
     max-width: 320px;
@@ -117,6 +139,10 @@
 .screenshots .screenshots-slider .slick-prev:before, 
 .screenshots .screenshots-slider .slick-next:before{
     color: #333;
+}
+/*FAQ*/
+.faq .faq-category-title{
+    padding-left: 10px;
 }
 /*FOOTER*/ 
 footer .footer-widgets .widget img{
@@ -219,7 +245,7 @@ footer .footer-widgets .widget p{
 /*SLICK Overwrite*/
 .slick-dots {
     position: absolute;
-    bottom: -45px;
+    bottom: -55px;
     display: block;
     width: 100%;
     padding: 0;
@@ -273,9 +299,9 @@ footer .footer-widgets .widget p{
     .circle-svg svg{
         max-width: 460px;
     }
-    .features-circle .circle-svg{
+    /* .features-circle .circle-svg{
         top: -90px;
-    }
+    } */
 }
 @media (min-width: 992px){
     .slide .content-bottom img {
@@ -287,9 +313,9 @@ footer .footer-widgets .widget p{
     .main-features .features-circle{
         padding: 60px 0;
     }
-    .features-circle .circle-svg {
+    /* .features-circle .circle-svg {
         top: 10px;
-    }
+    } */
     .features-circle img{
         max-width: 100%;
     }

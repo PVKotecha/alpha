@@ -125,6 +125,9 @@ button:focus{
 .other-features .other-features-slider .item{
     min-height: 245px;
 }
+.other-features .other-features-slider .item p{
+    font-size: 15px;
+}
 /*Tutorial Videos*/
 .screenshots .screenshots-slider .item{
     opacity: unset;
@@ -156,6 +159,9 @@ button:focus{
     float: right;
     margin-bottom: 30px;
     font-size: 15px;
+} 
+.faq .accordion .card.alfa-accordion-open{
+    border-radius: 5px !important;
 }
 /*FOOTER*/ 
 footer .footer-widgets .widget img{

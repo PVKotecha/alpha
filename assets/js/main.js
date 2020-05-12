@@ -230,8 +230,7 @@
                 ]
             });
         }
-        /*END RECENT NEWS SLIDER JS*/
-
+        /*END RECENT NEWS SLIDER JS*/ 
     });
 
 }(jQuery));

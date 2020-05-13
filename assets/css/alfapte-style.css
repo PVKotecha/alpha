@@ -44,9 +44,9 @@ button:focus{
 .alfa-header-top-btn-wrapper .btn-primary{
     padding: 10px 40px;
 }
-/* .alfa-btn-join-now{
-    padding: 9px 40px !important;
-} */
+.alfa-btn-join-now{
+    padding: 10px 26px !important;
+}
 /*Header*/
 .foxapp-header{
     top: 90px;

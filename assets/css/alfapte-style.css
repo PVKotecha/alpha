@@ -168,12 +168,19 @@ button:focus{
 /*FOOTER*/ 
 footer .footer-widgets .widget img{
     max-width: 150px;
-    margin-top: 4rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: block;
 }
 footer .footer-widgets .widget p{
     font-size: 14px;
     line-height: 1.5;
 }
+footer .footer-widgets .widget img.alfa-aussie-logo{
+    max-width: 82px;
+    margin-left: 30px;
+}
+
 /*MODAL*/
 .alpha-login-modal .modal-dialog{ 
     max-width: 410px;
@@ -213,7 +220,7 @@ footer .footer-widgets .widget p{
     border-radius: 50%;
     height: 100px;
     width: 100px;
-    margin: 0 auto;
+    margin: 0 auto 24px;
 } 
 .alpha-login-modal .modal-body{
     padding: 1rem 2.5rem;
@@ -361,6 +368,13 @@ footer .footer-widgets .widget p{
     }
     .why-us h3{
         margin-top: 20px;
+    }
+    footer .footer-widgets .widget{
+        text-align: center;
+    }
+    footer .footer-widgets .widget img,
+    footer .footer-widgets .widget img.alfa-aussie-logo{
+        margin: 0 auto;
     }
 }
 @media (max-width: 375px){

@@ -91,6 +91,15 @@ button:focus{
 .fun-facts .fact-box h5{
     font-size: 44px;
 }
+.alfa-percentage .fact-box h5{
+    position: relative;
+}
+.alfa-percentage.fact-box h5::after{
+    content: "%";
+}
+.alfa-million.fact-box h5::after{
+    content: "M";
+}
 /* .fun-facts .fact-box .lnr,
 .fun-facts .fact-box h5,
 .fun-facts .fact-box h6{

@@ -29,6 +29,9 @@ button:focus{
     left: 0;
     top: 0;
 } */
+.foxapp-header.sticky{
+    max-width: 100%;
+}
 .alfa-header-top .navbar-brand{
     float: left;
     z-index: 0;
@@ -51,7 +54,10 @@ button:focus{
 .foxapp-header{
     top: 90px;
 }
-
+.alfa-white-logo{
+    width: 80px;
+    display: none;
+}
 /*HERO Section*/
 .alfa-hero.watch-video .video,
 .why-us.watch-video .video{
@@ -311,12 +317,21 @@ footer .footer-widgets .widget img.alfa-aussie-logo{
 .slick-next{
     right: 25px;
 }
+@media (min-width: 992px){
+    .slide .content-bottom img {
+        max-width: 500px;
+    }
+}
 @media (max-width: 1366px){
     .slide .content-bottom { 
         padding-bottom: 70px;
     }
 }
-
+@media (min-width: 992px) and (max-width: 1025px) { 
+    .circle-svg svg {
+        margin-left: -20px;
+    }
+}
 @media (max-width: 1024px){ 
     .alfa-about-img{
         max-width: 90%;
@@ -324,19 +339,13 @@ footer .footer-widgets .widget img.alfa-aussie-logo{
     .features-circle img{
         max-width: 100%;
     }
-    .circle-svg svg{
+    /* .circle-svg svg{
         max-width: 460px;
-    }
+    } */
     /* .features-circle .circle-svg{
         top: -90px;
     } */
 }
-@media (min-width: 992px){
-    .slide .content-bottom img {
-        max-width: 500px;
-    }
-}
-
 @media (max-width: 768px){
     .main-features .features-circle{
         padding: 60px 0;
@@ -349,6 +358,11 @@ footer .footer-widgets .widget img.alfa-aussie-logo{
     }
     .alfa-about-img{
         max-width: 100%;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .circle-svg svg {
+        max-width: 360px;
     }
 }
 @media (max-width: 767px){

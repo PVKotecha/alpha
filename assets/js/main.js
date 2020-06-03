@@ -65,8 +65,10 @@
             var currentLink = $(this);
             if ($(currentLink).scrollTop() > 500) {
                 $foxappMenu.addClass("sticky");
+                $('.alfa-white-logo').show();
             } else {
                 $foxappMenu.removeClass("sticky");
+                $('.alfa-white-logo').hide();
             }
         });
         /*END MENU JS*/
